@@ -53,7 +53,7 @@ Our goal is to help teams or solo developers manage and monitor project work eff
 - Coordinate in group chat and during team meetings to avoid conflicts.
 ---
 
-## 📅 Important Milestones
+## Important Milestones
 - **6/22/2025** – Quick Plan submitted  
 - **6/29/2025** – Comprehensive Plan submitted  
 - **7/20/2025** – Final product submission and presentation  
