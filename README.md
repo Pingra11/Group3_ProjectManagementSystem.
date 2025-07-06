@@ -28,10 +28,10 @@ Our goal is to help teams or solo developers manage and monitor project work eff
 ---
 
 ## Project Structure
-/index.html → Main HTML structure
-/css/style.css → Stylesheet
-/js/main.js → Main JavaScript logic
-/assets/ → Images, charts, or other assets
+- /index.html → Main HTML structure
+- /css/style.css → Stylesheet
+- /js/main.js → Main JavaScript logic
+- /assets/ → Images, charts, or other assets
 ---
 
 ## Contributing Guidelines
