@@ -61,5 +61,5 @@ Our goal is to help teams or solo developers manage and monitor project work eff
 ---
 
 !! Notes !!
-This repo serves as the base for all group development work. Please keep code clean, modular, and well-commented so all teammates can contribute effectively.
+This repo serves as the base for all group 3 development work. Keep code clean, modular, and well-commented.
 
