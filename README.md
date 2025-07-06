@@ -19,6 +19,18 @@ Our goal is to help teams or solo developers manage and monitor project work eff
   
 ---
 
+## Upcoming Tasks
+- Build Project Info input form and display  
+- Implement Requirements input/display  
+- Develop Time Logging form and logic  
+- Create Team Effort Summary table  
+- Add a chart / visual reports  
+- Apply CSS styling  
+- Conduct testing and debugging  
+- Finalize documentation and presentation materials  
+
+---
+
 ## Technologies Used
 - **HTML / CSS / JavaScript**
 - **Chart.js** (for data visualization)
@@ -39,19 +51,6 @@ Our goal is to help teams or solo developers manage and monitor project work eff
 - Use feature branches for major additions (ex. `feature-requirements-module`).
 - Regularly view `main` to stay up to date.
 - Coordinate in group chat and during team meetings to avoid conflicts.
-
----
-
-## Upcoming Tasks
-- Build Project Info input form and display  
-- Implement Requirements input/display  
-- Develop Time Logging form and logic  
-- Create Team Effort Summary table  
-- Add a chart / visual reports  
-- Apply CSS styling  
-- Conduct testing and debugging  
-- Finalize documentation and presentation materials  
-
 ---
 
 ## 📅 Important Milestones
