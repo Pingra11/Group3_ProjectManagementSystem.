@@ -7,15 +7,15 @@ const requirements = [];
 // Array to store time logs
 const timeLogs = [];
 
-// Placeholder functions
+// Early functions for project
 function addProjectInfo() {
-  console.log("Add project info function called");
+  console.log("Add project info function");
 }
 
 function addRequirement() {
-  console.log("Add requirement function called");
+  console.log("Add requirement function");
 }
 
 function logTime() {
-  console.log("Log time function called");
+  console.log("Log time function");
 }
