@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Project Management System</title>
+  <link rel="stylesheet" href="../CSS/style.css" />
+</head>
+<body>
+  <div class="container">
+    
+    <!-- ====================== SIDEBAR NAVIGATION ====================== -->
+    <aside class="sidebar">
+      <!-- Logo Section -->
+      <div class="logo">
+        <img src="../assets/Logo.png" alt="Project Logo" class="logo-img" />
+        <span class="logo-label">Project Hub</span>
+      </div>
+
+      <!-- Navigation Links -->
+      <nav class="nav-links">
+        <ul>
+          <li><a href="home.html" class="active">Home</a></li>
+          <li><a href="todo.html">To-Do</a></li>
+          <li><a href="logtime.html">Log Time</a></li>
+          <li><a href="requirements.html">Requirements</a></li>
+        </ul>
+      </nav>
+
+      <!-- Logout Button -->
+      <div class="logout">Log Out</div>
+    </aside>
+
+    <!-- ====================== MAIN CONTENT AREA ====================== -->
+    <main class="main-content">
+      
+      <!-- Header with welcome message and user profile -->
+      <header class="top-bar">
+        <div class="welcome-section">
+          <h1>Welcome to Your Dashboard</h1>
+          <p>All project details, tasks, and progress tracking start here.</p>
+        </div>
+        <div class="user-profile">
+          <span class="user-name">John Smith</span>
+          <img src="../assets/Profile.png" alt="User Profile" class="user-avatar" />
+        </div>
+      </header>
+
+      <!-- ====================== FIRST ROW OF CARDS ====================== -->
+      <section class="dashboard-row">
+        
+        <!-- Project Overview Card -->
+        <div class="dashboard-card" id="card-overview">
+          <button class="edit-btn" onclick="openModal('overview')">Edit</button>
+          <h3>Project Overview</h3>
+          <p class="editable-content">
+            A web-based Project Management System designed for small teams or solo workers to track requirements, time spent, and team progress. Built with simplicity and visibility in mind, the system logs work, visualizes hours, and centralizes updates.
+          </p>
+          <p class="card-updated">Last updated: July 13, 2025</p>
+        </div>
+        
+        <!-- Project Lead Card -->
+        <div class="dashboard-card" id="card-lead">
+          <button class="edit-btn" onclick="openModal('lead')">Edit</button>
+          <h3>Project Lead</h3>
+          <div class="editable-content">
+            <p><strong>Name:</strong> Peyton Ingram</p>
+            <p><strong>Role:</strong> Team Leader / Developer</p>
+          </div>
+          <p class="card-updated">Last updated: June 2, 2025</p>
+        </div>
+        
+        <!-- Team Members Card -->
+        <div class="dashboard-card" id="card-members">
+          <button class="edit-btn" onclick="openModal('members')">Edit</button>
+          <h3>Team Members</h3>
+          <ul class="editable-content">
+            <li>Saleh</li>
+            <li>Maryam Hamza</li>
+            <li>Cameron LaVaughn</li>
+            <li>Jose Landaverde</li>
+            <li>Olakay Ladapo</li>
+          </ul>
+          <p class="card-updated">Last updated: June 28, 2025</p>
+        </div>
+        
+      </section>
+
+      <!-- ====================== SECOND ROW OF CARDS ====================== -->
+      <section class="dashboard-row">
+        
+        <!-- Risk Status Card (Full Width) -->
+        <div class="dashboard-card full-width" id="card-risks">
+          <button class="edit-btn" onclick="openModal('risks')">Edit</button>
+          <h3>Top Risk Statuses</h3>
+          <ul class="editable-content">
+            <li><strong>Scope Creep:</strong> Feature additions may delay core goals<span class="risk-tag yellow" onclick="cycleRisk(this)">Medium</span></li>
+            <li><strong>Inconsistent Participation:</strong> Unequal team effort may lead to imbalance<span class="risk-tag yellow" onclick="cycleRisk(this)">Medium</span></li>
+            <li><strong>Time Constraints:</strong> Limited project duration impacts feature depth<span class="risk-tag red" onclick="cycleRisk(this)">High</span></li>
+            <li><strong>Miscommunication:</strong> Leads to errors in implementation<span class="risk-tag yellow" onclick="cycleRisk(this)">Medium</span></li>
+          </ul>
+          <p class="card-updated">Last updated: July 25, 2025</p>
+        </div>
+        
+      </section>
+      
+    </main>
+  </div>
+
+  <!-- ====================== EDIT MODAL ====================== -->
+  <div class="modal" id="shared-modal">
+    <div class="modal-content">
+      <!-- Close button -->
+      <span class="close" onclick="closeModal()">&times;</span>
+      
+      <!-- Modal title -->
+      <h2 id="modal-title">Edit</h2>
+      
+      <!-- Edit instructions -->
+      <div class="edit-instructions" id="edit-instructions">
+        Edit your content below
+      </div>
+      
+      <!-- Text area for editing -->
+      <div class="textarea-container">
+        <textarea id="shared-textarea" rows="8" placeholder="Enter your content here..."></textarea>
+      </div>
+      
+      <!-- Modal action buttons -->
+      <div class="modal-buttons">
+        <button class="cancel-btn" onclick="closeModal()">Cancel</button>
+        <button class="save-btn" id="shared-save-btn">Save Changes</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript file -->
+  <script src="../JS/main.js"></script>
+</body>
+</html>
