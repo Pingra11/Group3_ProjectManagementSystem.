@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tasks - Project Management System</title>
+  <link rel="stylesheet" href="../CSS/style.css" />
+</head>
+<body>
+  <div class="container">
+
+    <!-- ====================== SIDEBAR NAVIGATION ====================== -->
+    <aside class="sidebar">
+      <!-- Logo Section -->
+      <div class="logo">
+        <a href="home.html" class="logo-link">
+          <img src="../assets/Logo.png" alt="Project Logo" class="logo-img" />
+          <span class="logo-label">Project Hub</span>
+        </a>
+      </div>
+
+      <!-- Navigation Links -->
+      <nav class="nav-links">
+        <ul>
+          <li><a href="home.html"><img src="../assets/Home.png" alt="" class="nav-icon">Home</a></li>
+          <li><a href="todo.html" class="active"><img src="../assets/Tasks.png" alt="" class="nav-icon">Tasks</a></li>
+          <li><a href="logtime.html"><img src="../assets/LogTime.png" alt="" class="nav-icon">Log Time</a></li>
+          <li><a href="requirements.html"><img src="../assets/Requirements.png" alt="" class="nav-icon">Requirements</a></li>
+        </ul>
+      </nav>
+
+      <!-- Logout Button -->
+      <div class="logout">Log Out</div>
+    </aside>
+
+    <!-- ====================== MAIN CONTENT AREA ====================== -->
+    <main class="main-content">
+
+      <!-- Header -->
+      <header class="top-bar">
+        <div class="welcome-section">
+          <h1>Task Management</h1>
+          <p>Manage your tasks and track progress</p>
+        </div>
+        <div class="user-profile">
+          <span class="user-name">John Smith</span>
+          <img src="../assets/Profile.png" alt="User Profile" class="user-avatar" />
+        </div>
+      </header>
+
+      <!-- ====================== TO-DO CONTENT ====================== -->
+      <section class="dashboard-row">
+        <!-- Add New Task Card -->
+        <div class="dashboard-card">
+          <h3>Add New Task</h3>
+          <form id="task-form">
+            <div class="form-group">
+              <label for="task-title">Task Title:</label>
+              <input type="text" id="task-title" name="title" required>
+            </div>
+            <div class="form-group">
+              <label for="task-description">Description:</label>
+              <textarea id="task-description" name="description"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="task-requirement">Related Requirement:</label>
+              <select id="task-requirement" name="requirement">
+                <option value="">Select Requirement (Optional)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="task-priority">Priority:</label>
+              <select id="task-priority" name="priority" required>
+                <option value="">Select Priority</option>
+                <option value="high">High</option>
+                <option value="medium">Medium</option>
+                <option value="low">Low</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="task-due-date">Due Date:</label>
+              <input type="date" id="task-due-date" name="dueDate">
+            </div>
+            <button type="submit" class="submit-btn">Add Task</button>
+          </form>
+        </div>
+
+        <!-- Task Statistics Card -->
+        <div class="dashboard-card">
+          <h3>Task Statistics</h3>
+          <div class="task-stats">
+            <div class="stat-item">
+              <span class="stat-label">Total Tasks:</span>
+              <span class="stat-value" id="total-tasks">0</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-label">Completed:</span>
+              <span class="stat-value" id="completed-tasks">0</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-label">Pending:</span>
+              <span class="stat-value" id="pending-tasks">0</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-label">Overdue:</span>
+              <span class="stat-value" id="overdue-tasks">0</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Task Filters -->
+      <section class="dashboard-row">
+        <div class="dashboard-card full-width">
+          <h3>Task Filters</h3>
+          <div class="filter-controls">
+            <button class="filter-btn active" data-filter="all">All Tasks</button>
+            <button class="filter-btn" data-filter="pending">Pending</button>
+            <button class="filter-btn" data-filter="completed">Completed</button>
+            <button class="filter-btn" data-filter="overdue">Overdue</button>
+            <button class="filter-btn" data-filter="high">High Priority</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tasks List -->
+      <section class="dashboard-row">
+        <div class="dashboard-card full-width">
+          <h3>Tasks</h3>
+          <div class="tasks-container" id="tasks-list">
+            <p class="empty-state">No tasks added yet. Use the form above to add your first task.</p>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- JavaScript files -->
+  <script src="../JS/home.js"></script>
+  <script src="../JS/todo.js"></script>
+  <script src="../JS/page-transitions.js"></script>
+  <script src="../JS/page-blur-transitions.js"></script>
+</body>
+</html>

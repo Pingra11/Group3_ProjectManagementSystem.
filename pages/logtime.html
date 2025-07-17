@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Log Time - Project Management System</title>
+  <link rel="stylesheet" href="../CSS/style.css" />
+</head>
+<body>
+  <div class="container">
+
+    <!-- ====================== SIDEBAR NAVIGATION ====================== -->
+    <aside class="sidebar">
+      <!-- Logo Section -->
+      <div class="logo">
+        <a href="home.html" class="logo-link">
+          <img src="../assets/Logo.png" alt="Project Logo" class="logo-img" />
+          <span class="logo-label">Project Hub</span>
+        </a>
+      </div>
+
+      <!-- Navigation Links -->
+      <nav class="nav-links">
+        <ul>
+          <li><a href="home.html"><img src="../assets/Home.png" alt="" class="nav-icon">Home</a></li>
+          <li><a href="todo.html"><img src="../assets/Tasks.png" alt="" class="nav-icon">Tasks</a></li>
+          <li><a href="logtime.html" class="active"><img src="../assets/LogTime.png" alt="" class="nav-icon">Log Time</a></li>
+          <li><a href="requirements.html"><img src="../assets/Requirements.png" alt="" class="nav-icon">Requirements</a></li>
+        </ul>
+      </nav>
+
+      <!-- Logout Button -->
+      <div class="logout">Log Out</div>
+    </aside>
+
+    <!-- ====================== MAIN CONTENT AREA ====================== -->
+    <main class="main-content">
+
+      <!-- Header -->
+      <header class="top-bar">
+        <div class="welcome-section">
+          <h1>Time Tracking</h1>
+          <p>Log your work hours and view time summaries</p>
+        </div>
+        <div class="user-profile">
+          <span class="user-name">John Smith</span>
+          <img src="../assets/Profile.png" alt="User Profile" class="user-avatar" />
+        </div>
+      </header>
+
+      <!-- ====================== TIME TRACKING CONTENT ====================== -->
+      <section class="dashboard-row">
+        <!-- Log Time Card -->
+        <div class="dashboard-card">
+          <h3>Log Time Entry</h3>
+          <form id="time-log-form">
+            <div class="form-group">
+              <label for="log-date">Date:</label>
+              <input type="date" id="log-date" name="date" required>
+            </div>
+            <div class="form-group">
+              <label for="log-requirement">Requirement:</label>
+              <select id="log-requirement" name="requirement" required>
+                <option value="">Select Requirement</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="log-activity">Activity:</label>
+              <select id="log-activity" name="activity" required>
+                <option value="">Select Activity</option>
+                <option value="requirements-analysis">Requirements Analysis</option>
+                <option value="designing">Designing</option>
+                <option value="coding">Coding</option>
+                <option value="testing">Testing</option>
+                <option value="project-management">Project Management</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="log-hours">Hours:</label>
+              <input type="number" id="log-hours" name="hours" step="0.5" min="0" required>
+            </div>
+            <div class="form-group">
+              <label for="log-description">Description:</label>
+              <textarea id="log-description" name="description" placeholder="Brief description of work done"></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Log Time</button>
+          </form>
+        </div>
+
+        <!-- Time Summary Card -->
+        <div class="dashboard-card">
+          <h3>Time Summary</h3>
+          <div class="time-summary" id="time-summary">
+            <div class="activity-summary">
+              <h4>Total Hours by Activity</h4>
+              <div class="activity-hours" id="activity-hours">
+                <div class="activity-item">
+                  <span>Requirements Analysis:</span>
+                  <span id="req-analysis-hours">0.0</span>
+                </div>
+                <div class="activity-item">
+                  <span>Designing:</span>
+                  <span id="designing-hours">0.0</span>
+                </div>
+                <div class="activity-item">
+                  <span>Coding:</span>
+                  <span id="coding-hours">0.0</span>
+                </div>
+                <div class="activity-item">
+                  <span>Testing:</span>
+                  <span id="testing-hours">0.0</span>
+                </div>
+                <div class="activity-item">
+                  <span>Project Management:</span>
+                  <span id="project-mgmt-hours">0.0</span>
+                </div>
+              </div>
+
+              <!-- Time Distribution Chart -->
+              <div class="chart-container">
+                <canvas id="timeChart" width="300" height="300"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Time Logs Table -->
+      <section class="dashboard-row">
+        <div class="dashboard-card full-width">
+          <h3>Time Log History</h3>
+          <div class="time-logs-container">
+            <table id="time-logs-table">
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>Requirement</th>
+                  <th>Activity</th>
+                  <th>Hours</th>
+                  <th>Description</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody id="time-logs-body">
+                <tr class="empty-state">
+                  <td colspan="6">No time logs recorded yet.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- Hours by Requirement -->
+      <section class="dashboard-row">
+        <div class="dashboard-card full-width">
+          <h3>Hours by Requirement</h3>
+          <div class="requirement-hours" id="requirement-hours">
+            <p class="empty-state">No time logs recorded yet.</p>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- JavaScript files -->
+  <script src="../JS/home.js"></script>
+  <script src="../JS/logtime.js"></script>
+  <script src="../JS/page-transitions.js"></script>
+  <script src="../JS/page-blur-transitions.js"></script>
+</body>
+</html>

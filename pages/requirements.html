@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Requirements - Project Management System</title>
+  <link rel="stylesheet" href="../CSS/style.css" />
+</head>
+<body>
+  <div class="container">
+
+    <!-- ====================== SIDEBAR NAVIGATION ====================== -->
+    <aside class="sidebar">
+      <!-- Logo Section -->
+      <div class="logo">
+        <a href="home.html" class="logo-link">
+          <img src="../assets/Logo.png" alt="Project Logo" class="logo-img" />
+          <span class="logo-label">Project Hub</span>
+        </a>
+      </div>
+
+      <!-- Navigation Links -->
+      <nav class="nav-links">
+        <ul>
+          <li><a href="home.html"><img src="../assets/Home.png" alt="" class="nav-icon">Home</a></li>
+          <li><a href="todo.html"><img src="../assets/Tasks.png" alt="" class="nav-icon">Tasks</a></li>
+          <li><a href="logtime.html"><img src="../assets/LogTime.png" alt="" class="nav-icon">Log Time</a></li>
+          <li><a href="requirements.html" class="active"><img src="../assets/Requirements.png" alt="" class="nav-icon">Requirements</a></li>
+        </ul>
+      </nav>
+
+      <!-- Logout Button -->
+      <div class="logout">Log Out</div>
+    </aside>
+
+    <!-- ====================== MAIN CONTENT AREA ====================== -->
+    <main class="main-content">
+
+      <!-- Header -->
+      <header class="top-bar">
+        <div class="welcome-section">
+          <h1>Project Requirements</h1>
+          <p>Define and manage project requirements and specifications</p>
+        </div>
+        <div class="user-profile">
+          <span class="user-name">John Smith</span>
+          <img src="../assets/Profile.png" alt="User Profile" class="user-avatar" />
+        </div>
+      </header>
+
+      <!-- ====================== REQUIREMENTS CONTENT ====================== -->
+      <section class="dashboard-row">
+        <!-- Add New Requirement Card -->
+        <div class="dashboard-card">
+          <h3>Add New Requirement</h3>
+          <form id="requirement-form">
+            <div class="form-group">
+              <label for="req-title">Requirement Title:</label>
+              <input type="text" id="req-title" name="title" required>
+            </div>
+            <div class="form-group">
+              <label for="req-description">Description:</label>
+              <textarea id="req-description" name="description" required></textarea>
+            </div>
+            <div class="form-group">
+              <label for="req-type">Type:</label>
+              <select id="req-type" name="type" required>
+                <option value="">Select Type</option>
+                <option value="functional">Functional</option>
+                <option value="non-functional">Non-Functional</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="req-priority">Priority:</label>
+              <select id="req-priority" name="priority" required>
+                <option value="">Select Priority</option>
+                <option value="high">High</option>
+                <option value="medium">Medium</option>
+                <option value="low">Low</option>
+              </select>
+            </div>
+            <button type="submit" class="submit-btn">Add Requirement</button>
+          </form>
+        </div>
+
+        <!-- Requirements Summary Card -->
+        <div class="dashboard-card">
+          <h3>Requirements Summary</h3>
+          <div class="summary-stats">
+            <div class="stat-item">
+              <span class="stat-label">Total Requirements:</span>
+              <span class="stat-value" id="total-requirements">0</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-label">Functional:</span>
+              <span class="stat-value" id="functional-count">0</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-label">Non-Functional:</span>
+              <span class="stat-value" id="non-functional-count">0</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Requirements List -->
+      <section class="dashboard-row">
+        <div class="dashboard-card full-width">
+          <h3>Requirements List</h3>
+          <div class="requirements-container" id="requirements-list">
+            <p class="empty-state">No requirements added yet. Use the form above to add your first requirement.</p>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- JavaScript files -->
+  <script src="../JS/home.js"></script>
+  <script src="../JS/requirements.js"></script>
+  <script src="../JS/page-transitions.js"></script>
+  <script src="../JS/page-blur-transitions.js"></script>
+</body>
+</html>
+```
