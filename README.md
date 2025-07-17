@@ -1,4 +1,4 @@
-View Project with this Link --> [Visit my website]([pingra11.github.io/Group3_ProjectManagementSystem./](https://pingra11.github.io/Group3_ProjectManagementSystem./pages/home.html)) <--
+View Project with this Link --> <a href="[https://www.example.com](https://pingra11.github.io/Group3_ProjectManagementSystem./)" target="_blank">Visit my website</a> <--
 
 ## Group 3 Project Management System
 
