@@ -29,9 +29,8 @@ Our goal is to help teams or solo developers manage and monitor project work eff
 ---
 
 ## Project Structure
-- /index.html → HTML landing page
-- /HTML/... → HTML page logic
-- /CSS/... → Stylesheet
-- /JS/... → Main JavaScript logic
-- /assets/... → Images or other assets
----
+- `/index.html` – Main landing page of the application
+- `/HTML/` – Additional HTML files and structural markup
+- `/CSS/` – Stylesheets for layout and design
+- `/JS/` – JavaScript files for interactivity and logic
+- `/assets/` – Images, icons, and other media assets
