@@ -1,4 +1,4 @@
-View Project with this Link --> pingra11.github.io/Group3_ProjectManagementSystem./ <--
+View Project with this Link --> [Visit my website](pingra11.github.io/Group3_ProjectManagementSystem./) <--
 
 ## Group 3 Project Management System
 
