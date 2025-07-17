@@ -1,5 +1,4 @@
-View Project with this Link --> [Visit my website]([https://www.example.com](https://pingra11.github.io/Group3_ProjectManagementSystem./))
- <--
+View Project with this Link --> [Visit my website](https://pingra11.github.io/Group3_ProjectManagementSystem./) <--
 
 ## Group 3 Project Management System
 
