@@ -1,6 +1,6 @@
 # Group 3 Project Management System
 
-### View Project with this Link --> [Click Here](https://pingra11.github.io/Group3_ProjectManagementSystem./) <--
+### View project here with this Link --> [Click Here](https://pingra11.github.io/Group3_ProjectManagementSystem./) <--
 
 ## Launching the App
 
