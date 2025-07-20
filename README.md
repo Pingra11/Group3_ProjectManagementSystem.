@@ -1,5 +1,10 @@
 ### View Project with this Link --> [Click Here](https://pingra11.github.io/Group3_ProjectManagementSystem./) <--
 
+## Launching the App
+
+To launch the web app after downloading the files, simply open `index.html` file in the extracted directory of the project folder.
+
+
 # Group 3 Project Management System
 
 
