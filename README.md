@@ -2,10 +2,6 @@
 
 ### View project here with this Link --> [Click Here](https://pingra11.github.io/Group3_ProjectManagementSystem./) <--
 
-## Launching the App
-
-To launch the web app after downloading the files, simply open `index.html` file in the extracted directory of the project folder.
-
 ## Project Overview
 
 This is a web-based Project Management System designed for tracking project requirements, team contributions, and time spent on various development phases. The system provides an easy-to-use interface for logging project details, requirements, task hours, and   visualizing progress.
